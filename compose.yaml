@@ -1,14 +1,14 @@
 services:
-  mc:
-    image: mc-image
+  mc-server:
+    image: ${IMAGE_NAME}
     environment:
-      EULA: "true"
+      EULA: ${EULA}
     ports:
       - "8888:25565"
     volumes:
       - data:/data
     stdin_open: true
     tty: true
-    restart: unless-stopped
+    restart: ${RESTART_POLICY}
 volumes:
   data: {}
