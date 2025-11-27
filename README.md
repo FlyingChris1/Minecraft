@@ -12,7 +12,6 @@ This repository contains a fully containerized Minecraft Java Edition server env
 
 - Docker engine
 - Docker compose
-- Java Minecraft Server JAR
 
 ## Quickstart
 
@@ -28,16 +27,23 @@ cd Minecraft
 docker build -t mc-image .
 ```
 
+- Convert example.env into .env
+
+```bash
+cp example.env .env
+```
+
+
 - Start Docker compose 
 
 ```bash
 docker compose up -d
 ```
 
-- access the Minecraft server with your client
+- check if your server is up and running
 
 ```bash
-<your IP>:8888
+https://mcsrvstat.us/server/<your_server_ip>:8888
 ```
 
 ## Usage
