@@ -22,6 +22,11 @@ This repository contains a fully containerized Minecraft Java Edition server env
 git clone https://github.com/FlyingChris1/Minecraft.git
 cd Minecraft
 ```
+- Create Docker Image
+
+```bash
+docker build -t mc-image .
+```
 
 - Start Docker compose 
 
